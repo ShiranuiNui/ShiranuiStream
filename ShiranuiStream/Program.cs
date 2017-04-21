@@ -6,7 +6,8 @@ namespace ShiranuiStream
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IMiniblog TwitterInstance = new Twitter();
+            TwitterInstance.StartStreaming();
         }
     }
 }

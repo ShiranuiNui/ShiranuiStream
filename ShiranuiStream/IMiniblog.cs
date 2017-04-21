@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ShiranuiStream
 {
@@ -12,18 +13,19 @@ namespace ShiranuiStream
         /// <summary>
         /// Twitter:Tweet/Mastodon:Toot
         /// </summary>
-        void Post();
+        Task PostStatus(string Text);
         /// <summary>
         /// Twitter:ReTweet/Mastodon:Boost
         /// </summary>
-        void Reblog();
+        Task Reblog(long id);
         /// <summary>
         /// Twitter:Reply/Mastodon:Reply
         /// </summary>
-        void Reply();
+        Task Reply(string Text,long id);
         /// <summary>
         /// Twitter:Favorite/Mastodon:Favourite
         /// </summary>
-        void Favourite();
+        Task Favourite(long id);
+        void StartStreaming();
     }
 }

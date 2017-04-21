@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="CoreTweet" Version="0.7.2.352" />
+    <PackageReference Include="CoreTweet.Streaming.Reactive" Version="0.6.0.251" />
+    <PackageReference Include="System.Reactive.Linq" Version="3.1.1" />
   </ItemGroup>
 
   <ItemGroup>
